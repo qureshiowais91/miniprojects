@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin:10% auto;
+    width:50%;
+    height:50vh;
+    padding:20px;
+}
+
+ul li{
+    list-style: none;
+    list-style-type: none;
+}
