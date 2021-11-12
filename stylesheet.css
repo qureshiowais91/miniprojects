@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  background: lightblue;
+  text-align: center;
+  display: none;
+}
+
+
+.box *{
+    margin:20% auto;
+}
+
