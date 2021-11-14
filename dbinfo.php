@@ -1,6 +1,9 @@
-<?php 
-
+<?php
+const HOSTSTRING = "localhost";
 const DB = "crud";
 const ADMIN = "adminX";
-const PASSWORD ="";
+const PASSWORD = "123";
 
+$conn = mysqli_connect(HOSTSTRING, ADMIN, PASSWORD, DB);
+
+    

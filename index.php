@@ -1,8 +1,21 @@
 <?php
 if (isset($_GET['username'])) {
-    echo ($_GET['username']);
-    echo ($_GET['dob']);
+    $username = $_GET['username'];
+    $email = $_GET['email'];
+    $password = $_GET['password'];
+    $dob = $_GET['dob'];
+
+    require_once("./dbinfo.php");
+
+    $insetQuery = "INSERT INTO `db_crud`(`username`, `email`, `password`, `dob`) 
+    VALUES ('$username','$email','$password','$dob')";
+    if (mysqli_query($conn, $insetQuery)) {
+        echo ("data inserted");
+    } else {
+        echo ("it's not inserted");
+    }
 }
+
 
 ?>
 <!-- 
