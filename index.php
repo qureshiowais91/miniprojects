@@ -1,5 +1,8 @@
 <?php
-include('/opt/lampp/htdocs/loginFormPhp/backend/main.php');
+if (isset($_GET['submit'])) {
+    echo ($_GET['username']);
+}
+
 ?>
 <!-- 
 
@@ -42,10 +45,10 @@ CRUD with php
 
 <body>
     <div class="container">
-       
+
 
         <div class="showcase">
-             <p>Logo</p>
+            <p>Logo</p>
             <div>
                 <h3>
                     Welcome Page
@@ -55,31 +58,35 @@ CRUD with php
         </div>
 
         <div class="loginForm">
-            <form action="login.php">
+            <form action="main.php" method="GET">
                 <div>
                     <label>Username</label>
-                    <input type="text" id="Username">
+                    <input type="text" name="username">
                 </div>
 
                 <div>
                     <label>Email</label>
-                    <input type="date" id="Username">
+                    <input type="email" name="email">
                 </div>
 
                 <div>
                     <label>Password</label>
-                    <input type="password" id="password">
+                    <input type="password" name="password">
                 </div>
 
                 <div>
                     <label>Confirm Password</label>
-                    <input type="password" id="Con_password">
+                    <input type="password" name="Con_password">
+                </div>
+
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob">
                 </div>
 
 
                 <div>
-                    <label>Register</label>
-                    <input type="button" id="button" value="submit">
+                    <input type="button" id="button" name="submit" value="submit">
                 </div>
 
             </form>
