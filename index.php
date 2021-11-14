@@ -1,6 +1,7 @@
 <?php
-if (isset($_GET['submit'])) {
+if (isset($_GET['username'])) {
     echo ($_GET['username']);
+    echo ($_GET['dob']);
 }
 
 ?>
@@ -31,7 +32,6 @@ CRUD with php
 
 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +58,7 @@ CRUD with php
         </div>
 
         <div class="loginForm">
-            <form action="main.php" method="GET">
+            <form action="index.php" method="GET">
                 <div>
                     <label>Username</label>
                     <input type="text" name="username">
@@ -76,7 +76,7 @@ CRUD with php
 
                 <div>
                     <label>Confirm Password</label>
-                    <input type="password" name="Con_password">
+                    <input type="password" name="confPassword">
                 </div>
 
                 <div>
@@ -86,7 +86,7 @@ CRUD with php
 
 
                 <div>
-                    <input type="button" id="button" name="submit" value="submit">
+                    <button value="submit" name="Register">Register</button>
                 </div>
 
             </form>
