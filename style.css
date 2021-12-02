@@ -1,0 +1,13 @@
+.form-container{
+    width:50%;
+    margin: auto;
+    
+}
+
+.form-container *{
+ padding:0.5rem;
+}
+
+.form-container label{
+    float: left;
+}
