@@ -15,4 +15,7 @@ form.addEventListener("submit", (e) => {
 
   console.log(score);
   result.textContent ="Your Score is"+ " "+ score;
+  
 });
+
+
