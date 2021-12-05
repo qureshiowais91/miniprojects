@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(7, 51, 146);
+  color: white;
+  font-size: 24px;
+  font-weight:600;
+}
+
+.todoList {
+  width: 500px;
+  margin: auto;
+}
+
+.todos {
+  margin: 12px;
+  padding: 2px;
+  width:450px;
+  background-color: rgb(61, 103, 241);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+
+.hide{
+  display: none;
+}
