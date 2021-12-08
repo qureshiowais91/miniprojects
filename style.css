@@ -1,0 +1,19 @@
+* {
+  font-weight: 700;
+
+}
+
+body {
+  background-color: rgb(247, 255, 232);
+}
+
+.container {
+  width: 350px;
+  height:100vh;
+}
+
+
+span * {
+  margin:10px;
+  padding: 10px;
+}
